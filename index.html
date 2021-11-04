@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio</title>
+
+    <style>
+      .container {
+        background-color: #ebf2fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+      }
+      .neo {
+        padding: 10px 30px;
+        margin: 28px;
+        box-sizing: border-box;
+        background: #e5edf5;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        box-shadow: -4px -2px 16px rgba(255, 255, 255, 0.8),
+          4px 2px 16px rgba(95, 157, 231, 0.48), inset -4px -2px 8px #ffffff,
+          inset 4px 2px 8px rgba(95, 157, 231, 0.48);
+      }
+      .neo-radio {
+        appearance: none;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        border-radius: 50%;
+      }
+
+      .neo-radio:hover {
+        background: #e5edf5;
+        box-shadow: -11px -11px 22px rgba(255, 255, 255, 0.8),
+          11px 13px 22px rgba(95, 157, 231, 0.48),
+          inset -11px -11px 28px #FFFFFF,
+          inset 11px 11px 28px rgba(95, 157, 231, 0.48);
+      }
+      .neo-radio:checked {
+        background: linear-gradient(135deg, #7844e9 0%, #0979ff 100%);
+        border: 10px solid #e5edf5;
+        box-sizing: border-box;
+        box-shadow: -4px -2px 8px #ffffff,
+          4px 2px 8px rgba(95, 157, 231, 0.657315);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input class="neo neo-radio" name="radio" type="radio" />
+      <input
+        class="neo neo-radio"
+        name="radio"
+        type="radio"
+        checked="checked"
+      />
+      <input class="neo neo-radio" name="radio" type="radio" />
+      <input class="neo neo-radio" name="radio" type="radio" />
+    </div>
+  </body>
+</html>
